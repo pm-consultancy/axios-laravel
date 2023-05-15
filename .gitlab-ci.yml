@@ -1,6 +1,9 @@
 # Yarn 2+
 image: node:lts
 
+variables:
+  GIT_DEPTH: 1
+
 cache: &global_cache
   paths:
     - node_modules/
@@ -15,7 +18,7 @@ deploy:
   rules:
   - if: $CI_COMMIT_TAG
   before_script:
-    - mv .yarnrc.yml.gitlab .yarnrn.yml
+    - mv .yarnrc.yml.gitlab .yarnrc.yml
     - corepack enable
     - yarn set version self
     - yarn install
