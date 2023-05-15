@@ -1,17 +1,23 @@
 # Yarn 2+
 image: node:lts
 
+cache: &global_cache
+  paths:
+    - node_modules/
+
 stages:
   - deploy
 
-
-
 deploy:
   stage: deploy
+  cache:
+    <<: *global_cache
   rules:
   - if: $CI_COMMIT_TAG
   before_script:
     - corepack enable
     - yarn set version stable
+    - yarn
+    - yarn build
   script:
     - yarn npm publish
