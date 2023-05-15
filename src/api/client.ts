@@ -1,8 +1,8 @@
 import { type AxiosResponse, AxiosStatic, HttpStatusCode, type InternalAxiosRequestConfig } from 'axios'
 import { camelizeKeys, decamelizeKeys } from "humps";
 import retry from "axios-retry-after"
-import { ValidationError } from "../../dist";
 import { useRouter } from "vue-router";
+import { ValidationError } from "./validationError";
 
 
 interface LaravelOptionsInterface {
@@ -15,8 +15,6 @@ interface LaravelOptionsInterface {
 
 
 export const laravelApi = (axios: AxiosStatic, options: LaravelOptionsInterface) => {
-  const router = useRouter();
-
   const client = axios.create({
     baseURL: options.baseURL,
     withCredentials: true,
@@ -59,7 +57,7 @@ export const laravelApi = (axios: AxiosStatic, options: LaravelOptionsInterface)
     const router = useRouter();
 
     if (options.logErrors ?? false) {
-      // console.log(error)
+       console.log(error)
     }
     const { status, data } = error.response
 
