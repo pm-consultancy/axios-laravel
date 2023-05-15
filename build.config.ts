@@ -6,5 +6,5 @@ export default defineBuildConfig({
   ],
   declaration: true,
   clean: true,
-  externals: ['vuetify', 'vuetify/components'],
+  externals: ['vue','vuetify', 'vuetify/components'],
 })
