@@ -1,7 +1,6 @@
 {
-  "name": "pmc-laravel",
-  "private": true,
-  "version": "0.1.0",
+  "name": "@paulmenheere/axios-laravel",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "build": "unbuild",
@@ -61,5 +60,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "paulmenheere:registry": "https://gitlab.com/api/v4/projects/46025329/packages/npm/"
+  }
 }
