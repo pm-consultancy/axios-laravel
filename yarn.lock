@@ -714,9 +714,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@paulmenheere/axios-laravel@workspace:.":
+"@pmc/axios-laravel@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@paulmenheere/axios-laravel@workspace:."
+  resolution: "@pmc/axios-laravel@workspace:."
   dependencies:
     "@antfu/eslint-config": ^0.38.4
     "@types/humps": ^2.0.2
