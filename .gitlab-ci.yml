@@ -16,7 +16,7 @@ deploy:
   - if: $CI_COMMIT_TAG
   before_script:
     - corepack enable
-    - yarn set version stable
+#    - yarn set version stable
     - mv .yarnrc.yml.gitlab .yarnrn.yml
     - yarn install
     - yarn build
