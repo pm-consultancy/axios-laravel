@@ -723,17 +723,18 @@ __metadata:
     "@types/node": ^18.16.0
     "@vitejs/plugin-vue": ^4.1.0
     "@vuelidate/core": ^2.0.2
-    axios: ^1.3.6
+    axios: ^1.4.0
     axios-retry-after: ^2.0.0
     bumpp: ^9.1.0
-    eslint: ^8.39.0
+    eslint: ^8.40.0
     humps: ^2.0.1
     typescript: ^4.9.3
     unbuild: ^1.2.1
-    vite: ^4.3.1
+    vite: ^4.3.6
     vite-plugin-dts: ^2.3.0
     vite-plugin-vuetify: ^1.0.2
-    vuetify: ^3.1.15
+    vue-router: ^4.2.0
+    vuetify: ^3.2.4
   peerDependencies:
     "@vuelidate/core": ^2.0.2
     axios: ^1.3.6
@@ -1111,6 +1112,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/devtools-api@npm:^6.5.0":
+  version: 6.5.0
+  resolution: "@vue/devtools-api@npm:6.5.0"
+  checksum: ec819ef3a426e91d09e9cfefd2827e9ed8ec9d62bb3b3e0674f3da8c7e92a4b879c3b777dc7329172ca6fe2670b62dd5580d23160339208f0f5ae038f2e504ad
+  languageName: node
+  linkType: hard
+
 "@vuelidate/core@npm:^2.0.2":
   version: 2.0.2
   resolution: "@vuelidate/core@npm:2.0.2"
@@ -1351,7 +1359,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.3.6":
+"axios@npm:^1.4.0":
   version: 1.4.0
   resolution: "axios@npm:1.4.0"
   dependencies:
@@ -2452,7 +2460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.39.0":
+"eslint@npm:^8.40.0":
   version: 8.40.0
   resolution: "eslint@npm:8.40.0"
   dependencies:
@@ -5439,9 +5447,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.3.1":
-  version: 4.3.5
-  resolution: "vite@npm:4.3.5"
+"vite@npm:^4.3.6":
+  version: 4.3.6
+  resolution: "vite@npm:4.3.6"
   dependencies:
     esbuild: ^0.17.5
     fsevents: ~2.3.2
@@ -5472,7 +5480,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 6b7f2189f097110846e49a3f1d463bd620dfe9e4f433b1967e5b99f0789610ff4475e85e3e71476e6fa40be25449bb6f1c45edb95c79deba6f3f173699bff948
+  checksum: fa6a323308da58f08d59c1b96186fc7d054d6bbf2e976129f17cae4d439d50605584d0ec1cf245ac360024998e484422cb504e724c8efb936b3c22a120b4a210
   languageName: node
   linkType: hard
 
@@ -5509,7 +5517,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^3.1.15":
+"vue-router@npm:^4.2.0":
+  version: 4.2.0
+  resolution: "vue-router@npm:4.2.0"
+  dependencies:
+    "@vue/devtools-api": ^6.5.0
+  peerDependencies:
+    vue: ^3.2.0
+  checksum: 2ae40a4dd86e9abf50596cf779640daf61da8d668ffccf063ccc8762f95149eec6784700a4f2aa9d8854b4a6a885f2e300ddc84e5c4069dbd4a6b0cfed9d8e1a
+  languageName: node
+  linkType: hard
+
+"vuetify@npm:^3.2.4":
   version: 3.2.4
   resolution: "vuetify@npm:3.2.4"
   peerDependencies:
