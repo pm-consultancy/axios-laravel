@@ -17,7 +17,8 @@ deploy:
   before_script:
     - corepack enable
     - yarn set version stable
-    - yarn
+    - mv .yarnrc.yml.gitlab .yarnrn.yml
+    - yarn install
     - yarn build
   script:
     - yarn npm publish
