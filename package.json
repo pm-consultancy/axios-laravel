@@ -63,5 +63,6 @@
   ],
   "publishConfig": {
     "registry": "https://gitlab.com/api/v4/projects/46025329/packages/npm/"
-  }
+  },
+  "packageManager": "yarn@3.4.1"
 }
