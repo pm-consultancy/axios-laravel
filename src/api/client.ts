@@ -14,7 +14,7 @@ interface LaravelOptionsInterface {
 
 
 
-export const laravelApi = (axios: AxiosStatic, options: LaravelOptionsInterface) => {
+export const laravelApi = (axios: AxiosStatic, options: LaravelOptionsInterface):AxiosStatic => {
   const client = axios.create({
     baseURL: options.baseURL,
     withCredentials: true,
@@ -89,5 +89,5 @@ export const laravelApi = (axios: AxiosStatic, options: LaravelOptionsInterface)
     },
     basicErrorHandling)
 
-  return client
+  return <AxiosStatic>client
 }
