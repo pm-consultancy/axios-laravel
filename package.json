@@ -1,7 +1,10 @@
 {
   "name": "@pmc/axios-laravel",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "type": "module",
+  "license": "MIT",
+  "description": "Package to speed connecting to a Laravel API with Axios.",
+  "author": "Paul Menheere",
   "scripts": {
     "build": "unbuild",
     "dev": "vite serve dev",
